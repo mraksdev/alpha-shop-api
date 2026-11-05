@@ -1,0 +1,29 @@
+[
+  {
+    "model": "cart.cart",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "created": "2026-11-02T10:05:00Z",
+      "updated": "2026-11-02T10:05:00Z"
+    }
+  },
+  {
+    "model": "cart.cartitem",
+    "pk": 1,
+    "fields": {
+      "cart": 1,
+      "product": 1,
+      "quantity": 1
+    }
+  },
+  {
+    "model": "cart.cartitem",
+    "pk": 2,
+    "fields": {
+      "cart": 1,
+      "product": 4,
+      "quantity": 2
+    }
+  }
+]

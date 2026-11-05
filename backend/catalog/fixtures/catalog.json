@@ -1,0 +1,167 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Электроника",
+      "slug": "electronics",
+      "image": "demo/categories/electronics.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Дом и сад",
+      "slug": "home-garden",
+      "image": "demo/categories/home-garden.jpg"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Спорт и отдых",
+      "slug": "sports",
+      "image": "demo/categories/sports.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Смартфоны",
+      "slug": "smartphones",
+      "image": "demo/subcategories/smartphones.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Ноутбуки",
+      "slug": "laptops",
+      "image": "demo/subcategories/laptops.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "name": "Мебель",
+      "slug": "furniture",
+      "image": "demo/subcategories/furniture.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Кухня",
+      "slug": "kitchen",
+      "image": "demo/subcategories/kitchen.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 5,
+    "fields": {
+      "category": 3,
+      "name": "Фитнес",
+      "slug": "fitness",
+      "image": "demo/subcategories/fitness.jpg"
+    }
+  },
+  {
+    "model": "catalog.subcategory",
+    "pk": 6,
+    "fields": {
+      "category": 3,
+      "name": "Туризм",
+      "slug": "outdoor",
+      "image": "demo/subcategories/outdoor.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "subcategory": 1,
+      "name": "Смартфон Alpha X",
+      "slug": "smartphone-alpha-x",
+      "price": "69990.00",
+      "image": "demo/products/smartphone-alpha-x.jpg",
+      "image_medium": "demo/products/medium/smartphone-alpha-x.jpg",
+      "image_small": "demo/products/small/smartphone-alpha-x.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "subcategory": 2,
+      "name": "Ноутбук Alpha Book",
+      "slug": "laptop-alpha-book",
+      "price": "89990.00",
+      "image": "demo/products/laptop-alpha-book.jpg",
+      "image_medium": "demo/products/medium/laptop-alpha-book.jpg",
+      "image_small": "demo/products/small/laptop-alpha-book.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "subcategory": 3,
+      "name": "Диван Comfort",
+      "slug": "sofa-comfort",
+      "price": "45990.00",
+      "image": "demo/products/sofa-comfort.jpg",
+      "image_medium": "demo/products/medium/sofa-comfort.jpg",
+      "image_small": "demo/products/small/sofa-comfort.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "subcategory": 4,
+      "name": "Блендер Pro",
+      "slug": "blender-pro",
+      "price": "5990.00",
+      "image": "demo/products/blender-pro.jpg",
+      "image_medium": "demo/products/medium/blender-pro.jpg",
+      "image_small": "demo/products/small/blender-pro.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "subcategory": 5,
+      "name": "Гантели 10 кг",
+      "slug": "dumbbells-10",
+      "price": "3490.00",
+      "image": "demo/products/dumbbells-10.jpg",
+      "image_medium": "demo/products/medium/dumbbells-10.jpg",
+      "image_small": "demo/products/small/dumbbells-10.jpg"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "subcategory": 6,
+      "name": "Палатка Trail",
+      "slug": "tent-trail",
+      "price": "12990.00",
+      "image": "demo/products/tent-trail.jpg",
+      "image_medium": "demo/products/medium/tent-trail.jpg",
+      "image_small": "demo/products/small/tent-trail.jpg"
+    }
+  }
+]
