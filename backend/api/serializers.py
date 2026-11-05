@@ -1,3 +1,6 @@
+from decimal import Decimal
+
+from drf_spectacular.utils import extend_schema_field
 from rest_framework import serializers
 
 from cart.models import Cart, CartItem
@@ -63,7 +66,7 @@ class ProductSerializer(serializers.ModelSerializer):
             'images',
         )
 
-    def get_images(self, product):
+    def get_images(self, product) -> list[str]:
         """Return URLs of the original, medium and small images."""
         request = self.context.get('request')
         images = []
@@ -109,6 +112,7 @@ class CartSerializer(serializers.ModelSerializer):
         model = Cart
         fields = ('items', 'total_items', 'total_price')
 
+    @extend_schema_field(CartItemSerializer(many=True))
     def get_items(self, cart):
         """Return cart items with product details."""
         items = cart.items.select_related(
@@ -124,7 +128,7 @@ class CartSerializer(serializers.ModelSerializer):
         """Return the total number of products in the cart."""
         return cart.get_total_quantity()
 
-    def get_total_price(self, cart):
+    def get_total_price(self, cart) -> Decimal:
         """Return the total price of the cart."""
         return cart.get_total_price()
 
